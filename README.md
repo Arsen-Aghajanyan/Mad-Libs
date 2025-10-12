@@ -5,10 +5,6 @@ A fun and interactive **Python Mad Libs Generator** that lets you create hilario
 ---
 
 ##  Features
-- Choose from **3 story templates**:
-  1. 🧙‍♂️ *Magical Adventure*  
-  2. 🚀 *Space Trouble*  
-  3. 🏝️ *Vacation Disaster*
 - Press **Enter** to get a **random story**
 - Fill in prompts with your own words (nouns, adjectives, verbs, etc.)
 - Generates a fully personalized and funny story
@@ -18,7 +14,7 @@ A fun and interactive **Python Mad Libs Generator** that lets you create hilario
 
 ##  How It Works
 1. Run the script  
-2. Choose a story number (1–3) or press **Enter** for a random one  
+2. Press **Enter** for a random one  
 3. Type in the requested words  
 4. Read your unique story and laugh!
 
