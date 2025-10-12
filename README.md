@@ -25,6 +25,8 @@ A fun and interactive **Python Mad Libs Generator** that lets you create hilario
    ```bash
    git clone https://github.com/Arsen-Aghajanyan/Mad-Libs.git
 2. Navigate to the folder
+   ```bash
    cd Mad-Libs
-3. Run the script
+4. Run the script
+   ```bash
    python MadLibs.py
