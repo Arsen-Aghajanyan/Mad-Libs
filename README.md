@@ -19,3 +19,12 @@ A fun and interactive **Python Mad Libs Generator** that lets you create hilario
 4. Read your unique story and laugh!
 
 ---
+
+##  How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Arsen-Aghajanyan/Mad-Libs.git
+2. Navigate to the folder
+   cd Mad-Libs
+3. Run the script
+   python MadLibs.py
