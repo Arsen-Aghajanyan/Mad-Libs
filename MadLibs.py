@@ -1,5 +1,5 @@
 import random
-
+##
 # print("Choose a story template: ")
 # print("1. Magical Adventure")
 # print("2. Space Trouble")
