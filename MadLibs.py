@@ -65,3 +65,6 @@ elif choice == '2':
     print(story2)
 elif choice == '3':
     print(story3)
+else:
+    print("Invalid choice!")
+
