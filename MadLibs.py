@@ -1,12 +1,12 @@
 import random
-##
-# print("Choose a story template: ")
-# print("1. Magical Adventure")
-# print("2. Space Trouble")
-# print("3. Vacation Disaster")
-print("(<Press Enter for a random story>)")
 
-choice = input("")
+print("Choose a story template: ")
+print("1. Magical Adventure")
+print("2. Space Trouble")
+print("3. Vacation Disaster")
+print("4. (<Random story>)")
+
+choice = input("Choose which story you want: ")
 
 PName = input("Input Person Name: ")
 noun = input("Input noun: ")
@@ -56,10 +56,8 @@ A {color2} {animal2} stole their {noun2}, but they laughed for {num1} {measure}.
 It was the most {adj2} trip ever — {num2} stars out of ten!
 """
 
-
-
-if choice == "":
-    choice = random.choice(["1", '2', '3'])
+if choice == '4':
+    choice = random.choice(['1', '2', '3'])
 
 if choice == '1':
     print(story1)
