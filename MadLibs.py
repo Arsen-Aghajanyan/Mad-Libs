@@ -1,30 +1,51 @@
 import random
 
+def text(prompt):
+    value = input(prompt).strip()
+    while not value:
+        value = input("Input can't be empty. Try again: ").strip()
+    return value
+
+
+def num(prompt):
+    value = input(prompt).strip()
+    while not value.isdigit():
+        value = input("Please enter a numeric value: ").strip()
+    return int(value)
+
 print("Choose a story template: ")
 print("1. Magical Adventure")
 print("2. Space Trouble")
 print("3. Vacation Disaster")
 print("4. (<Random story>)")
 
-choice = input("Choose which story you want: ")
+choice = input("Choose which story you want: ").strip()
 
-PName = input("Input Person Name: ")
-noun = input("Input noun: ")
-adj1 = input("Input adjective(feeling): ")
-verb1 = input("Input verb: ")
-adj2 = input("Input adjective(feeling): ")
-animal = input("Input an animal: ")
-verb2 = input("Input verb: ")
-color1 = input("Input a color: ")
-verb_ing = input("Input a verb + ing: ")
-adverb = input("Input an adverb: ")
-num1 = input("Input a number: ")
-measure = input("Measure of time: ")
-color2 = input("Input another color: ")
-animal2 = input("Input another animal: ")
-num2 = input("Input a number: ")
-silly_word = input("Input a silly word: ")
-noun2 = input("Input a noun again: ")
+while choice not in ["1", "2", "3", "4"]:
+    choice = input("Please choose 1, 2, 3, or 4: ").strip()
+
+
+if choice == "4":
+    choice = random.choice(["1", "2", "3"])
+    print(f"Randomly selected template: {choice}")
+
+PName = text("Input Person Name: ")
+noun = text("Input noun: ")
+adj1 = text("Input adjective(feeling): ")
+verb1 = text("Input verb: ")
+adj2 = text("Input adjective(feeling): ")
+animal = text("Input an animal: ")
+verb2 = text("Input verb: ")
+color1 = text("Input a color: ")
+verb_ing = text("Input a verb + ing: ")
+adverb = text("Input an adverb: ")
+num1 = num("Input a number: ")
+measure = text("Measure of time: ")
+color2 = text("Input another color: ")
+animal2 = text("Input another animal: ")
+num2 = num("Input a number: ")
+silly_word = text("Input a silly word: ")
+noun2 = text("Input a noun again: ")
 
 # Story1
 story1 = f"""
@@ -56,8 +77,6 @@ A {color2} {animal2} stole their {noun2}, but they laughed for {num1} {measure}.
 It was the most {adj2} trip ever — {num2} stars out of ten!
 """
 
-if choice == '4':
-    choice = random.choice(['1', '2', '3'])
 
 if choice == '1':
     print(story1)
@@ -65,6 +84,3 @@ elif choice == '2':
     print(story2)
 elif choice == '3':
     print(story3)
-else:
-    print("Invalid choice!")
-
