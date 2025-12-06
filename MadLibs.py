@@ -2,8 +2,8 @@ import random
 
 def text(prompt):
     value = input(prompt).strip()
-    while not value:
-        value = input("Input can't be empty. Try again: ").strip()
+    while not value or value.isdigit():
+        value = input("Input must be non-empty and cannot be a number. Try again: ").strip()
     return value
 
 
@@ -84,3 +84,4 @@ elif choice == '2':
     print(story2)
 elif choice == '3':
     print(story3)
+
